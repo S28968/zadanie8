@@ -5,16 +5,11 @@ namespace WebApplication2.Services;
 
 public class TripsService : ITripsService
 {
-    
-    //private readonly string _connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=apbd;Integrated Security=True;";
     private readonly string _connectionString = "Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True;Trust Server Certificate=True";
-    //private readonly string _connectionString = "Data Source=db-mssql;Initial Catalog=2019SBD;Integrated Security=True;";
     
     public async Task<List<TripDTO>> GetTripsAsync()
     {
         var trips = new List<TripDTO>();
-        
-        //var cmdText = @"select IdTrip, Name from Trip";
 
         var cmdText = @"SELECT t.IdTrip, t.Name, Description, DateFrom, DateTo, MaxPeople FROM Trip t";
         
@@ -24,14 +19,12 @@ public class TripsService : ITripsService
             await conn.OpenAsync();
 
             var reader = await cmd.ExecuteReaderAsync();
-            
-            //int idTripOrdinal = reader.GetOrdinal("IdTrip");
 
             while (await reader.ReadAsync())
             {
                 trips.Add(new TripDTO()
                 {
-                    IdTrip = reader.GetInt32(0), //idTripOrdinal
+                    IdTrip = reader.GetInt32(0),
                     Name = reader.GetString(1),
                     Description = reader.GetString(2),
                     DateFrom = reader.GetDateTime(3),
@@ -61,8 +54,7 @@ public class TripsService : ITripsService
                             Name = countryReader.GetString(0)
                         });
                 }
-
-                //await countryReader.CloseAsync();
+                
             }
             
         }

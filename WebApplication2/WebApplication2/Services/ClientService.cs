@@ -1,6 +1,4 @@
-﻿using System.Data.SqlTypes;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using WebApplication2.Models.DTOs;
 
 namespace WebApplication2.Services;

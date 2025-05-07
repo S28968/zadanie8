@@ -1,9 +1,5 @@
 using System.Data.SqlTypes;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.Elfie.Diagnostics;
-using Microsoft.Data.SqlClient;
 using WebApplication2.Exceptions;
 using WebApplication2.Models.DTOs;
 using WebApplication2.Services;

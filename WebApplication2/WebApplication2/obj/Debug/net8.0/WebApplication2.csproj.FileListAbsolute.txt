@@ -521,3 +521,4 @@ C:\Users\battl\Desktop\Nowy folder\WebApplication2\WebApplication2\WebApplicatio
 C:\Users\battl\Desktop\Nowy folder\WebApplication2\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.pdb
 C:\Users\battl\Desktop\Nowy folder\WebApplication2\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.genruntimeconfig.cache
 C:\Users\battl\Desktop\Nowy folder\WebApplication2\WebApplication2\WebApplication2\obj\Debug\net8.0\ref\WebApplication2.dll
+C:\Users\battl\Desktop\Nowy folder\WebApplication2\WebApplication2\WebApplication2\obj\Debug\net8.0\WebApplication2.sourcelink.json

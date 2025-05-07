@@ -1,5 +1,4 @@
-﻿using System.Runtime.InteropServices;
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using WebApplication2.Exceptions;
 
 namespace WebApplication2.Services;
@@ -89,10 +88,6 @@ public class ClientTripService : IClientTripService
                 cmd.Parameters.AddWithValue("@RegisteredAt", dateInt);
 
                 await cmd.ExecuteScalarAsync();
-                
-                
-                
-                
 
             }
             

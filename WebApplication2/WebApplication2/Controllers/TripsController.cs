@@ -1,6 +1,4 @@
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.Elfie.Model;
 using WebApplication2.Services;
 
 namespace WebApplication2.Controllers
@@ -26,7 +24,6 @@ namespace WebApplication2.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetTripById(int id)
         {
-            //jesli zasob nie istineje?
             return Ok();
         }
 
